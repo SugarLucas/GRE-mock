@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRE Mock Exam</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GRE Mock Exam</h1>
+        
+        <!-- Timer Setup Section -->
+        <div id="timer-setup">
+            <label for="timer-input">Set Timer (in minutes): </label>
+            <input type="number" id="timer-input" value="60">
+            <button onclick="startTimer()">Start Exam</button>
+        </div>
+
+        <!-- Timer Display -->
+        <div id="timer" style="display:none;">Time Left: <span id="time">60:00</span></div>
+
+        <!-- Question Section -->
+        <div class="section" id="question-container">
+            <h2>Question <span id="question-number">1</span></h2>
+            <div id="question-content">
+                <!-- Placeholder for the questions -->
+            </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="navigation">
+            <button onclick="prevQuestion()">Previous</button>
+            <button onclick="nextQuestion()">Next</button>
+        </div>
+
+        <!-- End Exam Button -->
+        <button onclick="endExam()" id="end-exam-btn">End Exam</button>
+
+        <!-- Results Section (Initially Hidden) -->
+        <div id="results" style="display: none;">
+            <h2>Your Selected Answers</h2>
+            <div id="selected-answers"></div>
+        </div>
+        <div class="question-section">
+            <button id="mark-review-btn" class="mark-review-btn" onclick="markQuestion()">Mark for Review</button>
+        </div>
+        
+        <!-- Review Section -->
+        <div class="review-section">
+            <h2>Review Your Questions</h2>
+            <p>This section shows the questions you marked for review. Click the "Review" button to go back to that question.</p>
+        
+            <table class="review-table">
+                <thead>
+                    <tr>
+                        <th>Question Number</th>
+                        <th>Status</th>
+                        <th>Marked</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="review-list">
+                    <!-- Rows will be dynamically added here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

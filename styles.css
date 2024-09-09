@@ -1,0 +1,258 @@
+/* General Reset */
+body, h1, h2, p, table, th, td {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #5A2D82;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 22px;
+    color: #5A2D82;
+    margin-bottom: 15px;
+}
+
+/* Timer Setup */
+#timer-setup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#timer-setup label {
+    font-size: 18px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+#timer-setup input[type="number"] {
+    padding: 5px;
+    width: 60px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+}
+
+#timer-setup button {
+    padding: 8px 15px;
+    background-color: #5A2D82;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#timer-setup button:hover {
+    background-color: #4c236d;
+}
+
+/* Timer Display */
+#timer {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #5A2D82;
+    margin-bottom: 20px;
+}
+
+/* Question Section */
+.section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    font-size: 20px;
+    color: #5A2D82;
+    margin-bottom: 10px;
+}
+
+#question-content p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#question-content label {
+    display: block;
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+#question-content input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Text Input */
+#question-content input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Navigation Buttons */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #5A2D82;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4c236d;
+}
+
+/* End Exam Button */
+#end-exam-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 30px;
+    background-color: #F28500;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#end-exam-btn:hover {
+    background-color: #e07a00;
+}
+
+/* Results Section */
+#results {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    text-align: center;
+}
+
+#results h2 {
+    font-size: 22px;
+    color: #5A2D82;
+    margin-bottom: 10px;
+}
+
+#selected-answers p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Question Section */
+.question-section {
+    margin-top: 20px;
+}
+
+/* Mark for Review Button */
+.mark-review-btn {
+    padding: 10px 20px;
+    background-color: #F28500;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.mark-review-btn:hover {
+    background-color: #e07a00;
+}
+
+/* Review Section */
+.review-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review-section h2 {
+    font-size: 22px;
+    color: #5A2D82;
+    margin-bottom: 15px;
+}
+
+.review-section p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.review-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.review-table th, .review-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.review-table th {
+    background-color: #5A2D82;
+    color: white;
+}
+
+.review-table tbody tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+.review-table tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+/* Review Button */
+.review-button {
+    padding: 8px 15px;
+    background-color: #5A2D82;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.review-button:hover {
+    background-color: #4c236d;
+}
